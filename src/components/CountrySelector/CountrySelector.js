@@ -13,7 +13,7 @@ const CountrySelector = ({ handleCountryChange }) => {
         }
 
         fetchAPI();
-    }, [setFetchedCountries]);
+    }, []);
 
     //console.log(fetchedCountries);
 

@@ -1,0 +1,30 @@
+.stats{
+    background-color: #f5f6fa;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.stats__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.stats__container{
+    display: flex;
+    justify-content: space-between;
+}
+.stats__left{
+    flex: 0.9;
+}
+.stats__right{
+    height: fit-content;
+}
+
+@media (max-width: 990px){
+    .stats{
+        flex-direction: column;
+    }
+}

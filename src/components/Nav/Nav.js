@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const Nav = (props) => {
     return (
         <>
-            <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm " id="header">
+            <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm " id="header" style={{ position: 'sticky', top: 0, zIndex: 10 }}>
                 <Link className="navbar-brand mr-5 pl-5" to="/" style={{ fontFamily: 'Raleway', fontSize: '25px' }}>
                     COVID INFO
                 </Link>

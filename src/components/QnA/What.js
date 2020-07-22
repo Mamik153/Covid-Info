@@ -16,18 +16,28 @@ const cards = [
 const What = () => {
     return (
         <>
-            <div className='container-fluid mt-5 pt-5' style={{ overflow:'hidden', fontFamily: 'Poppins' }}>
+            <div className='container-fluid' style={{ overflow:'hidden', fontFamily: 'Poppins' }}>
                 <div className='row'>
-                    <div className='text-center col-lg-4 offset-lg-1 col-8 offset-2' style={{padding: '200px 0px 0px 0', }}>
+                    <div className='text-center col-lg-4 offset-lg-1 col-8 offset-2' style={{ marginTop: '10%' }}>
                         <span style={{ border: '0',borderRadius: '20px', background: '#b9f4bc', padding: '5px 20px', fontSize: '1.2em'}} className='text-success mb-5'>COVID-19 Q&A</span>
                         <h1 className='mt-3'>Q&A on coronaviruses (COVID-19)</h1>
                         <p className='text-info left'>
                             WHO is continuously monitoring and responding to this outbreak. This Q&A will be updated as more is known about COVID-19, how it spreads and how it is affecting people worldwide. For more information, check back regularly on WHO’s coronavirus pages. 
                             <br/><br/>
-                            <a style={{ fontSize: '20px' }} className='row ml-3' href ='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/' target='_blank' rel="noopener noreferrer">Click to know more&nbsp;<div style={{ marginTop: '3px' }}><ion-icon name="arrow-forward-outline"></ion-icon></div></a>
+                            <a 
+                                style={{ fontSize: '20px' }} 
+                                className='row ml-3' 
+                                href ='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/' 
+                                target='_blank' rel="noopener noreferrer"
+                            >
+                                Click to know more&nbsp;
+                                <span style={{ marginTop: '3px' }}>
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </span>
+                            </a>
                         </p>
                     </div>
-                    <div className="accordion p-5 col-lg-6 ml-0 col-md-10 offset-md-1 offset-1 col-sm-12 col-12" id="QnA" style={{marginTop: '20px', padding: '20px', width: '100vw', alignItems: 'center'}}>
+                    <div className="accordion p-5 col-lg-6 ml-0 col-md-10 offset-md-1 offset-1 col-sm-12 col-12" id="QnA" style={{padding: '20px', width: '100vw', alignItems: 'center'}}>
                         
                         {
                             cards.map( (card, i) => {

@@ -26,10 +26,10 @@ const News = () =>{
     }, []);
 
     return(
-        <div style={{ marginTop: '150px' }}>
+        <div style={{ marginTop: '20px' }}>
             <div  className='text-center header'>
-                <span style={{ border: '0',borderRadius: '20px', background: '#b9f4bc', padding: '5px 20px', fontSize: '1.2em'}} className='text-success text-center'>COVID-19 News</span>
-                <h1 className="text-center mt-3">{error ? <span className='text-danger'>Error: {error}</span> : 'Covid Related News'}</h1>
+                <span style={{ border: '0',borderRadius: '20px', background: '#b9f4bc', padding: '5px 20px', fontSize: '1.2em'}} className='text-success text-center'>COVID-19 NEWS</span>
+                <h1 className="text-center mt-3">{error ? <span className='text-danger'>Error: {error}</span> : ''}</h1>
             </div>
             
             
